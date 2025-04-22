@@ -26,10 +26,40 @@ Strings can be created using string literals or the String class constructor.
 // 13. contains(CharSequence sequence): Checks if the string contains the specified sequence of characters.
 
 // return the length of the string
+// class string{
+//     public static void main(String[] args) {
+//         String str1 = "hello world";
+//         System.out.println("length of the string is " + str1.length());
+//     }
+// }
+
+// return the character at the specified index
+// class string{
+//     public static void main(String[] args) {
+//         String str1 = "harsh chouksey";
+//         System.out.println("character at index 5 is " + str1.charAt(7));
+
+//     }
+// }
+// count the no. of frequency present in the string
 class string{
     public static void main(String[] args) {
-        String str1 = "hello world";
-        System.out.println("length of the string is " + str1.length());
+        String str1 = "harsh chouksey";
+        int count = 0;
+        char[] arr= str1.toCharArray();
+        for(int i = 0; i < arr.length; i++) {
+            count = 0;
+            for(int j = 0; j < arr.length; j++) {
+                if(arr[i] == arr[j]) {
+                    count++;
+                }
+        
+
+            }
+            System.err.println("character " + arr[i] + " is present " + count + " times in the string");
+        }
+        
     }
 }
+
 
