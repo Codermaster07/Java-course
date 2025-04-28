@@ -53,7 +53,7 @@ class string{
                 if(arr[i] == arr[j]) {
                     count++;
                 }
-        
+                                                                                                                                                   
 
             }
             System.err.println("character " + arr[i] + " is present " + count + " times in the string");
